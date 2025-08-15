@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import ReactiveStateExample from '../../examples/ReactiveStateExample.vue'
+import ReactiveStateExample from '@/examples/ReactiveStateExample.vue'
 
 defineProps<{
   msg: string
@@ -10,8 +10,8 @@ const paragraph = ref('Ici, vous pouvez tester les fonctionnalités de Vue.js')
 </script>
 
 <template>
-  <div class="playground">
-    <h1 class="green">{{ msg }}</h1>
+  <div class="text-center">
+    <h1 class="green text-2xl">{{ msg }}</h1>
     <p>{{ paragraph }}</p>
   </div>
   <br />
@@ -19,31 +19,10 @@ const paragraph = ref('Ici, vous pouvez tester les fonctionnalités de Vue.js')
   <br />
 
   <!-- Examples -->
-  <div class="examples">
+  <div>
+    <h2 class="text-xl">Examples :</h2>
+    <br />
+
     <ReactiveStateExample />
   </div>
 </template>
-
-<style scoped>
-h1 {
-  font-weight: 500;
-  font-size: 2.6rem;
-  position: relative;
-  top: -10px;
-}
-h3 {
-  font-size: 1.2rem;
-}
-.playground h1,
-.playground h3,
-.playground p {
-  text-align: center;
-}
-
-@media (min-width: 1024px) {
-  .playground h1,
-  .playground h3 {
-    text-align: left;
-  }
-}
-</style>
