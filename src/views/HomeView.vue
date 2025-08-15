@@ -5,7 +5,6 @@ import Playground from '@/components/Playground.vue'
 <template>
   <main class="home">
     <Playground msg="Bienvenue dans Vue.js" />
-    <br />
   </main>
 </template>
 <style></style>

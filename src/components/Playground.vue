@@ -1,13 +1,26 @@
 <script setup lang="ts">
+import { ref } from 'vue'
+import ReactiveStateExample from '../../examples/ReactiveStateExample.vue'
+
 defineProps<{
   msg: string
 }>()
+
+const paragraph = ref('Ici, vous pouvez tester les fonctionnalités de Vue.js')
 </script>
 
 <template>
   <div class="playground">
     <h1 class="green">{{ msg }}</h1>
-    <p>Ici, vous pouvez tester les fonctionnalités de Vue.js</p>
+    <p>{{ paragraph }}</p>
+  </div>
+  <br />
+  <hr />
+  <br />
+
+  <!-- Examples -->
+  <div class="examples">
+    <ReactiveStateExample />
   </div>
 </template>
 
@@ -18,11 +31,9 @@ h1 {
   position: relative;
   top: -10px;
 }
-
 h3 {
   font-size: 1.2rem;
 }
-
 .playground h1,
 .playground h3,
 .playground p {
