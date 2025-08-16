@@ -61,6 +61,7 @@ const deleteTodo = async (id: string) => {
   todos.value = todos.value && todos.value.filter((todo) => todo.id !== id)
 }
 
+// Life cycle methods
 onMounted(() => {
   getTodos()
 })
