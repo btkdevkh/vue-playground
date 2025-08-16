@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 // import OptionApi from '@/examples/OptionApiExample.vue'
 // import CompositionApiExample from '@/examples/CompositionApiExample.vue'
-// import ReactiveStateExample from '@/examples/ReactiveStateExample.vue'
+import ReactiveStateExample from '@/examples/reactiveStateExample/ReactiveStateExample.vue'
 
 defineProps<{
   msg: string
@@ -24,6 +24,6 @@ const paragraph = ref('Ici, vous pouvez tester les fonctionnalités de Vue.js')
   <div>
     <!-- <OptionApi /> -->
     <!-- <CompositionApiExample /> -->
-    <!-- <ReactiveStateExample /> -->
+    <ReactiveStateExample />
   </div>
 </template>

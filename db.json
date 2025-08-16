@@ -1,16 +1,12 @@
 {
   "todos": [
     {
-      "id": "1755299157789",
-      "title": "Acheter la viande"
-    },
-    {
       "id": "1755301353612",
-      "title": "Acheter les pains"
+      "title": "Acheter du pain"
     },
     {
       "id": "1755301429536",
-      "title": "Acheter les fruits"
+      "title": "Acheter des fruits"
     }
   ]
 }
